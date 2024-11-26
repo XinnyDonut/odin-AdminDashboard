@@ -49,9 +49,10 @@ body {
    
 }
 .container{
-    min-height:100vh;
+    /* min-height:100vh; */
     display:grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: 
         'main-sidebar header'
         'main-sidebar main';
@@ -135,11 +136,13 @@ main{
     background-color:rgb(234, 232, 232);
     display: grid;
     grid-template-columns: 3fr 1fr;
+    
 }
+
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:1rem;
+    gap:2rem;
     padding:1rem;
    
 }
@@ -159,7 +162,35 @@ main{
 .project-icons>*{
     margin: 0.6em;
 }
-
+.secondary-sidebar{
+    
+    padding: 0.8em;
+    padding-top: 2em;
+}
+.trending-sidebar{
+    padding-top: 1em;;
+}
+.announcements-area{
+    background-color: white;
+    border-radius: 10px;
+}
+.anouncement-card{
+    padding: 0.8em;
+    border-bottom: solid;
+}
+.anouncement-card p{
+    font-size: 0.8rem;
+}
+.trending-area{
+    background-color: white;
+    border-radius: 10px;
+}
+.trending-content{
+    display:flex;
+    gap:1em;
+    padding:0.7em;
+  
+}
 
 img, picture, video, canvas, svg {
     display: block;
